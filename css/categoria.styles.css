@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 
@@ -39,12 +47,16 @@ a{
 
 /* CONTENT */
 .content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 /* ASSIDE */
 .asside ul li.active{
     border-radius: 20px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#134DD4), to(#FF2FB3));
+    background: -o-linear-gradient(top, #134DD4, #FF2FB3);
     background: linear-gradient(180deg, #134DD4, #FF2FB3);
     -webkit-background-clip: text;
     -webkit-text-stroke: 2px transparent;
@@ -59,8 +71,10 @@ a{
     padding: 10px 20px;
     border-radius: 0 20px 20px 0;
     color: #fff;
+    background: -o-linear-gradient(45deg, #FFFFFF80, #F8F8F833) !important;
     background: linear-gradient(45deg, #FFFFFF80, #F8F8F833) !important;
-    box-shadow: 0 4px 4px 0 #134DD440;
+    -webkit-box-shadow: 0 4px 4px 0 #134DD440;
+            box-shadow: 0 4px 4px 0 #134DD440;
 }
 
 .asside{
@@ -72,14 +86,21 @@ a{
 }
 
 .asside > nav{
+    background: -webkit-gradient(linear, left top, left bottom, from(#C4F3D6), color-stop(#C4D7F3), color-stop(#FFD2EB), to(#E4C4F3));
+    background: -o-linear-gradient(top, #C4F3D6, #C4D7F3, #FFD2EB, #E4C4F3);
     background: linear-gradient(180deg, #C4F3D6, #C4D7F3, #FFD2EB, #E4C4F3);
     border-radius: 0 100px 10px 10px;
     padding: 60px 0;
 }
 
 .asside > nav > ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 30px;
 }
 
@@ -97,9 +118,14 @@ a{
 
 /* CARD PRODUCT */
 .cards-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-        justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
 }
 
 .card-product{
@@ -116,6 +142,8 @@ a{
 .card-product-slider{
     width: 95%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -131,19 +159,28 @@ a{
     position: relative;
     top: -45px;
     width: 100%;
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
     border-radius: 20px !important;
     padding: 5px; 
     cursor: pointer;
     z-index: 1;
-    box-shadow: 4px -3px 5px -4px #134DD466;
+    -webkit-box-shadow: 4px -3px 5px -4px #134DD466;
+            box-shadow: 4px -3px 5px -4px #134DD466;
 }
 
 .card-product .product-price{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-family: 'Play';
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 
@@ -156,12 +193,16 @@ a{
 /* Estilização da seção de filtro */
 .custom-dropdown {
     position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     width: 100%;
     font-size: 16px;
     cursor: pointer;
     gap: 145px;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     margin-bottom: 35px;
 }
 
@@ -170,8 +211,12 @@ a{
 }
 
 .dropdown-select {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 10px 15px;
     border: 1px solid #FF2FB3;
     color: #FF2FB3;
@@ -181,7 +226,9 @@ a{
     border-radius: 20px;
     height: 50px;
     font-size: 20px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 230px;
     margin-left: 50px;
 }
@@ -191,7 +238,9 @@ a{
     height: 10px;
     border-left: 2px solid #ff2f83;
     border-bottom: 2px solid #ff2f83;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     margin-left: 10px;
 }
 
@@ -201,6 +250,8 @@ a{
     left: 260px;
     width: 25%;
     border-radius: 0px 10px 10px 10px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#C4F3D6), color-stop(#C4D7F3), color-stop(#FFD2EB), to(#E4C4F3));
+    background: -o-linear-gradient(top, #C4F3D6, #C4D7F3, #FFD2EB, #E4C4F3);
     background: linear-gradient(180deg, #C4F3D6, #C4D7F3, #FFD2EB, #E4C4F3);
     color: #134DD4;
     padding: 0;
@@ -235,9 +286,13 @@ a{
 }
 
 .size-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; 
     gap: 10px; 
-    justify-content: center;
+    -webkit-box-pack: center; 
+        -ms-flex-pack: center; 
+            justify-content: center;
     margin-top: 20px;
 }
 
@@ -260,6 +315,8 @@ a{
     color: #000;
     font-size: 26px;
     cursor: pointer;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    -o-transition: background-color 0.3s, color 0.3s;
     transition: background-color 0.3s, color 0.3s;
     font-family: Antonio;
 }
@@ -267,11 +324,18 @@ a{
 
 /* FILTRO PRECO */
 .price-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; 
     gap: 10px; 
-    justify-content: center;
+    -webkit-box-pack: center; 
+        -ms-flex-pack: center; 
+            justify-content: center;
     margin-top: 20px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-bottom: 150px;
 }
 
@@ -335,6 +399,8 @@ a{
 }
 
 .custom-dropdown-mobile{
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
     margin: 30px auto;
     width: 95%;
@@ -343,9 +409,13 @@ a{
 
 .custom-dropdown-mobile .dropdown-select{
     margin-left: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     font-size: 14px;
-    justify-content: normal;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
     height: 42px;
 }
 
@@ -365,6 +435,8 @@ a{
 
 .submenu-container {
     display: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(#C4F3D6), color-stop(#C4D7F3), color-stop(#FFD2EB), to(#E4C4F3));
+    background: -o-linear-gradient(top, #C4F3D6, #C4D7F3, #FFD2EB, #E4C4F3);
     background: linear-gradient(180deg, #C4F3D6, #C4D7F3, #FFD2EB, #E4C4F3);
     width: 150px;
     position: absolute;
@@ -402,6 +474,8 @@ a{
 }
 
 .custom-dropdown-preco .dropdown-select-preco {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 10px 15px;
     border: 1px solid #FF2FB3;
@@ -410,11 +484,17 @@ a{
     z-index: 1;
     font-family: 'Antonio';
     border-radius: 20px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     font-size: 14px;
-    justify-content: normal;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
     height: 42px;
     gap: 5px;
 }
@@ -432,7 +512,9 @@ a{
     height: 10px;
     border-left: 2px solid #ff2f83;
     border-bottom: 2px solid #ff2f83;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     margin-left: 5px;
 }
 
@@ -450,6 +532,8 @@ a{
     left: 260px;
     width: 25%;
     border-radius: 0px 10px 10px 10px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#C4F3D6), color-stop(#C4D7F3), color-stop(#FFD2EB), to(#E4C4F3));
+    background: -o-linear-gradient(top, #C4F3D6, #C4D7F3, #FFD2EB, #E4C4F3);
     background: linear-gradient(180deg, #C4F3D6, #C4D7F3, #FFD2EB, #E4C4F3);
     color: #134DD4;
     padding: 0;
@@ -490,9 +574,14 @@ a{
 
 
 .cards-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .product-img img {

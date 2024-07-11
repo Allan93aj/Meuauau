@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 
@@ -37,10 +45,14 @@ a{
 }
 
 .logos-quemsomos__container--img{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 35% 45% 20%;
     grid-template-columns: 35% 45% 20%;
     margin: 30px 0;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
 }
 
@@ -76,11 +88,18 @@ font-size: 16px;
 }
 
 .quemsomos__container--pessoa{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 49px;
-    align-items: center;
-    justify-content: center; 
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
 }
 
 @media (max-width: 768px) {
