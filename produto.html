@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/produto.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Darker+Grotesque:wght@300..900&family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>  
+  <script type="text/javascript" src="slick/slick.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <title>Meu Au Au - Produto</title>
+</head>
+<body>
+
+    <!-- PRODUTO -->
+    <div class="container-fluid produto">
+        <div class="container">
+            <div class="produto-img">
+                <div class="foto-produto col-md-6">
+                    <div class="img-view">
+                       <img id="trocarimg" src="img/produtos/peitoral.png" alt="">
+                    </div>
+                    <div class="img-small">
+                        <ul>
+                            <li class="active" onclick="img1()">
+                                <div class="img-item">
+                                    <img src="img/produtos/peitoral.png" alt=""> 
+                                </div>
+                            </li>
+                            <li onclick="img2()">
+                                <div class="img-item">
+                                    <img src="img/produtos/peitoral2.png" alt="">
+                                </div>
+                            </li>
+                            <li onclick="img3()">
+                                <div class="img-item">
+                                    <img src="img/produtos/peitoral3.png" alt="">
+                                </div>
+                            </li>
+                            <li onclick="img4()">
+                                <div class="img-item">
+                                    <img src="img/produtos/peitoral4.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="produto-opcoes">
+                <div class="wrapper-produto-opcoes">
+                    <h1>PRODUTO PEITORAL</h1>
+                </div>
+                <div class="produto-price">
+                    <h2>R$ 99,90</h2>
+                </div>
+
+                <div class="produto-quantidade">
+                    <div class="quantity-selector">
+                        <h2>QUANTIDADE</h2>
+                        <div class="quantity-input">
+                            <button class="decrease" type="button" onclick="decreaseQuantity()">&#60;</button>
+                            <input type="text" id="quantity" value="1" min="1">
+                            <button class="increase" type="button" onclick="increaseQuantity()">&#62;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produto-tamanho">
+                    <h2>SELECIONE A OPÇÃO DE TAMANHO</h2>
+                    <div class="produto-size-buttons">
+                        <button class="produto-size-button">PP</button>
+                        <button class="produto-size-button">P</button>
+                        <button class="produto-size-button">M</button>
+                        <button class="produto-size-button active">G</button>
+                        <button class="produto-size-button">GG</button>
+                    </div>
+                </div>
+
+                
+
+                <div class="produto-cor">
+                    <h2>SELECIONE A COR DO PRODUTO</h2>
+                    <div class="produto-cor-opcoes">
+                        <button class="produto-cor-button btn1"><span></span></button>
+                        <button class="produto-cor-button btn2"><span></span></button>
+                        <button class="produto-cor-button btn3"><span></span></button>
+                        <button class="produto-cor-button btn4"><span></span></button>
+                        <button class="produto-cor-button btn5"><span></span></button>
+                        <button class="produto-cor-button btn6"><span></span></button>
+                        <button class="produto-cor-button btn7"><span></span></button>
+                    </div>
+                </div>
+
+                <div class="frete-mobile">
+                    <div class="container-frete">
+                        <label for="">FRETE</label>
+                        <input type="text" placeholder="CEP">
+                    </div>
+                </div>
+
+                <div class="produto-comprar">
+                    <button class="produto-btn-comprar">COMPRAR</button>
+                    <button class="produto-btn-cart">
+                        <img src="/img/assets/cart-produtos.png" alt="cart">
+                        <span class="header_cart_count">+</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DESCRICAO DO PRODUTO -->
+     <div class="descricao">
+        <div class="container-descricao">
+            <p>EXEMPLO DE DESCRIÇÃO: <br/>
+                PEITORAL PERSONALIZADO E REFLETIVO COM O NOME DO SEU PET <br/>
+                As letras refletem quando contra a luz, ideal para passeios noturnos possibilitando <br/>
+                fácil visibilidade do seu animal evitando qualquer acidente.<br/>
+                - É fabricado a partir de fita em poliester super resistente;<br/>
+                - Tecido tecnologico aerado e alça frontal com fechamento em velcro;<br/>
+                - O peitoral possui uma bolsinha lateral utilizada como CATA CACA; <br/>
+                - Fecho tem trava de segurança, e na parte superior uma alça que permite melhor controle<br/>
+                do AUmigo em caso de necessidade;<br/>
+                - O logo é feito em borracha atóxica, ou seja não faz mal caso seu filho de 4 patas venha a<br/>
+                ingerir, os detalhes coloridos não desbotam ou saem nas lavagens do produto.<br/><br/>
+                
+                DÚVIDAS FREQUENTES:<br/>
+                Ele serve para todas as raças?<br/>
+                Sim, conforme as medidas indicadas na foto acima, porém, não recomendamos para cães K9 ou que<br/>
+                sejam agressivos, pois existem produtos específicos, inclusive para adestramento.<br/><br/>
+                
+                Como faço para tirar as medidas do meu Pet?<br/>
+                Na sessão de fotos tem a tabela de medidas, porém, como todos produtos são confeccionados <br/>
+                manualmente, desde o corte, sublimação, costura e acabamento pode haver uma diferença de cor<br/>
+                por lote e ate 1cm para mais ou para menos. Vale lembrar que cada Pet tem uma anatomia diferente.<br/>
+                Qual o prazo para chegar meu pedido?<br/>
+                Após a confirmação do pedido e pagamento, o produto será enviado no mesmo dia<br/>
+                (dependendo do horário do pedido) até 3 dias úteis + o prazo dos Correios que foi selecionado<br/>                ao efetuar a compra – PAC ou SEDEX </p>
+        </div>
+     </div>
+
+
+     <!-- PRODUTOS RELACIONADOS -->
+      <div class="produtos-relacionados">
+        <div class="container-produtos-relacionados">
+            <h2>PRODUTOS RELACIONADOS</h2>
+            <div class="produtos-relacionados-lista">
+                    <!-- card product -->
+    
+                    <div class="card-product">
+                        <div class="card-product-slider">
+                            <div class="product first">
+                                <div class="product-img">
+                                    <img src="img/produtos/peitoral.png" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                                        PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                                            </h1>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="product-installment">6x de 16,65</span>
+                                        <span class="product-price">R$ 99,90</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product second">
+                                <div class="product-img">
+                                    <img src="img/produtos/peitoral2.png" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                                            PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                                                </h1>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="product-installment">6x de 16,65</span>
+                                        <span class="product-price">R$ 99,90</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product third">
+                                <div class="product-img">
+                                    <img src="img/produtos/peitoral3.png" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                                            PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                                                </h1>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="product-installment">6x de 16,65</span>
+                                        <span class="product-price">R$ 99,90</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product fourth">
+                                <div class="product-img">
+                                    <img src="img/produtos/peitoral4.png" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                                            PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                                                </h1>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="product-installment">6x de 16,65</span>
+                                        <span class="product-price">R$ 99,90</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product fifth">
+                                <div class="product-img">
+                                    <img src="img/produtos/peitoral.png" alt="">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                                            PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                                                </h1>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="product-installment">6x de 16,65</span>
+                                        <span class="product-price">R$ 99,90</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+            </div>
+        </div>
+      </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script> 
+
+    <script>
+         $(document).ready(function(){
+    //    SLIDER DA MINI FOTO DO PRODUTO
+        $('.foto-produto ul').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        arrows: false
+      }
+    }
+  ]});
+
+
+            $('.card-product-slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: false
+      }
+    }
+  ]});
+
+
+    });
+
+
+    // FUNCAO DE DIMINUIR E AUMENTAR A QUANTIDADE DE PRODUTO
+    function decreaseQuantity() {
+            var quantityInput = document.getElementById('quantity');
+            if (quantityInput.value > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        }
+
+        function increaseQuantity() {
+            var quantityInput = document.getElementById('quantity');
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        }
+
+
+
+        // FUNCAO DE SELECIONAR TAMANHO
+        const sizeButtons = document.querySelectorAll('.produto-size-button');
+
+            // Adiciona um evento de clique a cada botão
+            sizeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove a classe 'active' de todos os botões
+                    sizeButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Adiciona a classe 'active' ao botão clicado
+                    button.classList.add('active');
+                });
+            });
+
+
+         // FUNCAO DE SELECIONAR A COR DO PRODUTO
+         const colorButtons = document.querySelectorAll('.produto-cor-button');
+
+            // Adiciona um evento de clique a cada botão
+            colorButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove a classe 'active' de todos os botões
+                    colorButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Adiciona a classe 'active' ao botão clicado
+                    button.classList.add('active');
+                });
+            });
+
+
+
+        // FUNCAO DE ALTERAR A FOTO DO PRODUTO
+        $(document).onclick('ul li', function(){
+            $(this).addClass(active).siblings,removeClass('active')
+        })
+
+        function img1 (){
+            document.getElementById("trocarimg").src="img/produtos/peitoral.png"
+        }
+
+        function img2 (){
+            document.getElementById("trocarimg").src="img/produtos/peitoral2.png"
+        }
+
+        function img3 (){
+            document.getElementById("trocarimg").src="img/produtos/peitoral3.png"
+        }
+
+        function img4 (){
+            document.getElementById("trocarimg").src="img/produtos/peitoral4.png"
+        }
+
+       
+
+    </script>
+
+
+</body>
+</html>

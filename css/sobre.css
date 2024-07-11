@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul,
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+/* BANNER */
+.banner img{
+    width: 100%;
+}
+
+.quemsomos__container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.quemsomos h1{
+    font-size: 40px;
+    font-family: Anton;
+}
+
+.quemsomos p{
+    font-size: 12px;
+    font-family: Antonio;
+}
+
+.logos-quemsomos{
+    width: 95%;
+    margin: 50px auto;
+}
+
+.logos-quemsomos__container--img{
+    display: grid;
+    grid-template-columns: 35% 45% 20%;
+    margin: 30px 0;
+    align-items: center;
+
+}
+
+.quemsomos-desc{
+    font-family: Antonio;
+    font-size: 20px;
+}
+
+.quemsomos-ano{
+    font-family: Anton;
+    font-size: 48px;
+    text-align: center;
+}
+
+/* CARD PESSOA */
+.quemsomos__pessoa{
+    width: 95%;
+    margin: 100px auto;
+}
+
+.card-pessoa{
+    text-align: center;
+}
+
+.card-pessoa .card-pessoa__nome h1{
+font-family: Anton;
+font-size: 16px;
+}
+
+.card-pessoa .card-pessoa__descricao h2{
+font-family: Antonio;
+font-size: 16px;
+}
+
+.quemsomos__container--pessoa{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 49px;
+    align-items: center;
+    justify-content: center; 
+}
+
+@media (max-width: 768px) {
+
+.logos-quemsomos__container--img img{
+    width: 80%;
+}
+
+.quemsomos-desc{
+    font-size: 10px;
+}
+
+.quemsomos-ano{
+    font-size: 22px;
+}
+
+/* card pessoa */
+.quemsomos__container--pessoa{
+    gap: 5%;
+}
+
+.card-pessoa{
+    width: 30%;
+    margin-bottom: 25px;
+}
+
+.card-pessoa__img img{
+    width: 100%;
+}
+
+}

@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Darker+Grotesque:wght@300..900&family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>  
+  <script type="text/javascript" src="slick/slick.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <title>Meu Au Au</title>
+</head>
+<body>
+    <!-- topbar -->
+     <div class="topbar">
+        <div class="topbar__container">
+            <h2>Todo o Site até 70% OFF</h2>
+        </div>
+     </div>
+
+     <!-- header -->
+      <div class="header">
+        <div class="header__container">
+            <!-- logo -->
+            <div class="header__logo">
+                <img src="/img/logo.png" alt="logo">
+            </div>
+
+            <!-- pesquisa -->
+             <div class="header__search">
+                <input type="text" placeholder="Pesquisar">
+                <button class="btn-search">
+                    <span>Pesquisar</span>
+                </button>
+             </div>
+
+             <!-- perfil e suporte -->
+              <div class="header__profile">
+                <div class="header__profile__container">
+                    <div class="header__profile_icon">
+                        <img src="/img/assets/profile.png" alt="perfil">
+                        <span>PERFIL</span>
+                    </div>
+                    <div class="header__suporte_icon">
+                        <img src="/img/assets/suport.png" alt="suporte">
+                        <span>SUPORTE <br/> CENTRAL</span>
+                    </div>
+                </div>
+              </div>
+
+              <!-- carrinho -->
+               <div class="header__cart">
+                <div class="header__cart__container">
+                    <div class="header__cart__icon">
+                        <img src="/img/assets/cart-produtos.png" alt="cart">
+                        <span class="header_cart_count">0</span>
+                    </div>
+                    <!-- ICONE DE CARRINHO DO MOBILE -->
+                    <div class="header__cart__icon__mobile">
+                        <img src="/img/mobile/cart-mob.png" alt="cart">
+                        <span class="header_cart_count">0</span>
+                    </div>
+
+                    <div class="header__cart_price">
+                        <span class="cart_price_name">CARRINHO</span>
+                        <span class="cart_price_value">R$ 0,00</span>
+                    </div>
+                </div>
+               </div>
+
+               
+        </div>
+      </div>
+
+      <!-- navegação -->
+      <div class="header__nav">
+        <div class="header__nav__container_desktop">
+            <nav>
+                <ol>
+                    <li class="lojista"><a href="#">ÁREA DO LOJISTA</a></li>
+                </ol>
+                <ul>
+                    <li class="personalizados"><a href="categoria.html">PERSONALIZADOS</a></li>
+                    <li class="promocoes"><a href="#">PROMOÇÕES</a></li>
+                    <li class="cachorro"><a href="#">CACHORRO</a></li>
+                    <li class="gato"><a href="#">GATO</a></li>
+                    <li class="licenciados"><a href="#">LICENCIADOS</a></li>
+                    <li class="galeria"><a href="#">GALERIA</a></li>
+                    <li class="sobre"><a href="#">SOBRE</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header__nav__container_mobile">
+            <nav>
+                <ol>
+                    <li class="lojista">
+                        <a href="#">
+                            <img src="img/mobile/lojista.png" alt="">
+                            <h3>ÁREA DO LOJISTA</h3>
+                        </a>
+                    </li>
+                </ol>
+                <ul>
+                    <li class="personalizados">
+                        <a href="categoria.html">
+                            <img src="img/mobile/personalizado.png" alt="">
+                            <h3>PERSONALIZADOS</h3>
+                        </a>
+                    </li>
+                    <li class="promocoes">
+                        <a href="#">
+                            <img src="img/mobile/promocoes.png" alt="">
+                            <h3>PROMOÇÕES</h3>
+                        </a>
+                    </li>
+                    <li class="cachorro">
+                        <a href="#">
+                            <img src="img/mobile/cachorro.png" alt="">
+                            <h3>CACHORRO</h3>
+                        </a>
+                    </li>
+                    <li class="gato">
+                        <a href="#">
+                            <img src="img/mobile/gato.png" alt="">
+                            <h3>GATO</h3>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- banner -->
+     <div class="banner">
+        <div class="banner__container">
+            <img src="img/banner.png" alt="">
+        </div>
+     </div>
+
+     <!-- categorias -->
+     <div class="categories categorias-desktop">
+        <div class="category first">
+            <img src="img/gato.jpg" alt="">
+        </div>
+        <div class="category second">
+            <img src="img/gato.png" alt="">
+        </div>
+        <div class="category third">
+            <img src="img/gato.jpg" alt="">
+        </div>
+        <div class="category fourth ">
+            <img src="img/gato.jpg" alt="">
+        </div>
+        <div class="category fifth">
+            <img src="img/gato.jpg" alt="">
+        </div>
+        <div class="category sixth">
+            <img src="img/gato.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="categories categorias-mobile">
+        <div class="category first">
+            <img src="img/mobile/style.png" alt="">
+        </div>
+        <div class="category second">
+            <img src="img/mobile/safe.png" alt="">
+        </div>
+        <div class="category third">
+            <img src="img/mobile/antipuxao.png" alt="">
+        </div>
+        <div class="category fourth ">
+            <img src="img/mobile/coleira.png" alt="">
+        </div>
+        <div class="category fifth">
+            <img src="img/mobile/guia.png" alt="">
+        </div>
+        <div class="category sixth">
+            <img src="img/mobile/seguranca.png" alt="">
+        </div>
+    </div>
+
+
+    <!-- lançamento e mais vendido -->
+    
+    <div class="fundo">
+    
+     <div class="launches__bestsellers">
+        <div class="container">
+            <div class="launches__container">
+                <img src="img/lancamentos.png" alt="">
+            </div>
+            <div class="bestsellers__container">
+                <img src="img/vendidos.png" alt="">
+            </div>
+        </div>
+     </div>
+
+     <!-- SEGUNDO BANNER  -->
+      <div class="second-banner">
+        <div class="container-second-banner">
+            <img src="img/banner.png" alt="">
+        </div>
+      </div>
+
+     <!-- card product -->
+
+     <div class="card-product">
+        <div class="card-product-slider">
+            <div class="product first">
+                <div class="product-img">
+                    <a href="produto.html">
+                        <img src="img/produtos/peitoral.png" alt="">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                        PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                            </h1>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-installment">6x de 16,65</span>
+                        <span class="product-price">R$ 99,90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product second">
+                <div class="product-img">
+                    <img src="img/produtos/peitoral2.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                            PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                                </h1>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-installment">6x de 16,65</span>
+                        <span class="product-price">R$ 99,90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product third">
+                <div class="product-img">
+                    <img src="img/produtos/peitoral3.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                            PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                                </h1>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-installment">6x de 16,65</span>
+                        <span class="product-price">R$ 99,90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product fourth">
+                <div class="product-img">
+                    <img src="img/produtos/peitoral4.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                            PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                                </h1>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-installment">6x de 16,65</span>
+                        <span class="product-price">R$ 99,90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product fifth">
+                <div class="product-img">
+                    <img src="img/produtos/peitoral.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                            PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                                </h1>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-installment">6x de 16,65</span>
+                        <span class="product-price">R$ 99,90</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="card-product">
+        <div class="card-product-slider">
+            <div class="product first">
+                <div class="product-img">
+                    <img src="img/produtos/peitoral.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                        PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                            </h1>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-installment">6x de 16,65</span>
+                        <span class="product-price">R$ 99,90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product second">
+                <div class="product-img">
+                    <img src="img/produtos/peitoral2.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                            PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                                </h1>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-installment">6x de 16,65</span>
+                        <span class="product-price">R$ 99,90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product third">
+                <div class="product-img">
+                    <img src="img/produtos/peitoral3.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                            PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                                </h1>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-installment">6x de 16,65</span>
+                        <span class="product-price">R$ 99,90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product fourth">
+                <div class="product-img">
+                    <img src="img/produtos/peitoral4.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                            PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                                </h1>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-installment">6x de 16,65</span>
+                        <span class="product-price">R$ 99,90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product fifth">
+                <div class="product-img">
+                    <img src="img/produtos/peitoral.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                            PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                                </h1>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-installment">6x de 16,65</span>
+                        <span class="product-price">R$ 99,90</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="card-product">
+        <div class="card-product-slider">
+            <div class="product first">
+                <div class="product-img">
+                    <img src="img/produtos/peitoral.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                        PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                            </h1>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-installment">6x de 16,65</span>
+                        <span class="product-price">R$ 99,90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product second">
+                <div class="product-img">
+                    <img src="img/produtos/peitoral2.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                            PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                                </h1>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-installment">6x de 16,65</span>
+                        <span class="product-price">R$ 99,90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product third">
+                <div class="product-img">
+                    <img src="img/produtos/peitoral3.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                            PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                                </h1>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-installment">6x de 16,65</span>
+                        <span class="product-price">R$ 99,90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product fourth">
+                <div class="product-img">
+                    <img src="img/produtos/peitoral4.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                            PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                                </h1>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-installment">6x de 16,65</span>
+                        <span class="product-price">R$ 99,90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product fifth">
+                <div class="product-img">
+                    <img src="img/produtos/peitoral.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <h1>PEITORAL SAFE DE DIVERSOS MODELOS E TAMANHOS 
+                            PARA ESCOLHER PARA O SEU CACHORRO OU GATO
+                                </h1>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-installment">6x de 16,65</span>
+                        <span class="product-price">R$ 99,90</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+   
+
+    
+
+    <!-- banner revenda -->
+    <div class="banner-resale">
+        <div class="container-banner-resale">
+            <div class="banner-resale-img">
+                <div class="resale-img">
+                    <img src="img/bannerrevenda.png" alt="banner-resale">
+                </div>
+                <div class="resale-txt">
+                    <div class="wrapper-resale-txt">
+                        <h1>LOJISTA VAMOS INVESTIR EM REVENDA</h1>
+                        <h1>PEITORAL  DE DIVERSOS MODELOS E TAMANHOSPARA 
+                            ESCOLHER PARA O SEU CACHORRO OU GATO.</h1>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+<!-- section banner  -->
+    <div class="section-banner">
+        <div class="container">
+            <div class="dog__container">
+                <img src="img/lancamentos.png" alt="">
+            </div>
+            <div class="cat__container">
+                <img src="img/vendidos.png" alt="">
+            </div>
+        </div>
+     </div>
+
+
+     <!-- banner slide 2 -->
+      <div class="bannerTwo">
+        <div class="bannerTwo-slider">
+            <div class="wrapper-bannerTwo-slider">
+                <div class="bnn-item-left">
+                    <img src="img/Rectangle674.png" alt="bannerTwo">
+                </div>
+    
+                <div class="bnn-item-center">
+                    <img src="img/bannerTwo.png" alt="bannerTwo">
+                </div>
+    
+                <div class="bnn-item-right">
+                    <img src="img/Rectangle 673.png" alt="bannerTwo">
+                </div>
+    
+                <div>
+                    <img src="img/bannerTwo.png" alt="bannerTwo">
+                </div>
+                <div>
+                    <img src="img/bannerTwo.png" alt="bannerTwo">
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+
+      <!-- marcas -->
+       <div class="marcas">
+        <div class="container-marcas">
+            <h1>MARCAS</h1>
+            <div class="marcas-img">
+                <div>
+                    <img src="img/Logo.png" alt="marcas">
+                </div>
+                <div class="plus">
+                    +
+                </div>
+                <div>
+                    <img src="img/tumadamonica.png" alt="">
+                </div>
+            </div>
+        </div>
+       </div>
+     
+    </div>
+
+
+    <!-- newsletter -->
+    <div class="newsletter">
+        <div class="container-newsletter">
+            <div class="news-txt">
+                <h1>RECEBA OFERTAS E NOVIDADES DE NOSSA LOJA</h1>
+            </div>
+            <div class="news-email">
+                <input type="text" placeholder="E-MAIL">
+            </div>
+            <div class="news-btn">
+                <button>QUERO RECEBER!</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+     <div class="footer">
+        <div class="container-footer">
+            <div class="wrapper-footer-up">
+                <div class="col col-1">
+                    <div>
+                        <img src="img/Logo.png" alt="logo">
+                    </div>
+                    <div>
+                        <p>Somos fabricantes de Coleira, Guia, Peitoral e Acessorios Pet.
+                            Pioneiros no Brasil em fazer Personalizados com nome do seu Pet.
+                            E estampas exclusivas.
+                            Licenciados Turma da Monica Pets e Garfield. 
+                            Atendemos todo Brasil no Atacado e Varejo.</p>
+                    </div>
+                    <div>
+                        <button class="saiba-mais">
+                            <a href="#">SAIBA MAIS</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col col-2">
+                    <div class="footer-title">
+                        <h1>CATEGORIAS</h1>
+                    </div>
+                    <div class="footer-list">
+                        <ul>
+                            <li><a href="#">ÁREA DO LOJISTA</a></li>
+                            <li><a href="#">PERSONALIZADOS</a></li>
+                            <li><a href="#">PROMOÇÕES</a></li>
+                            <li><a href="#">CACHORROS</a></li>
+                            <li><a href="#">GATOS</a></li>
+                            <li><a href="#">LICENCIADOS</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col col-3">
+                    <div class="footer-title">
+                        <h1>INSTITUCIONAL</h1>
+                    </div>
+                    <div class="footer-list">
+                        <ul>
+                            <li><a href="#">FALE CONOSCO</a></li>
+                            <li><a href="#">ÁREA DO LOJISTA</a></li>
+                            <li><a href="#">QUEM SOMOS</a></li>
+                            <li><a href="#">POLÍTICA DE TROCA</a></li>
+                            <li><a href="#">PRIVACIDADE</a></li>
+                            <li><a href="#">SEGURANÇA</a></li>
+                            <li><a href="#">LOJAS PARCEIRAS</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col col-4">
+                    <div class="footer-title">
+                        <h1>ATENDIMENTO</h1>
+                    </div>
+                    <div class="footer-list">
+                        <ul>
+                            <li><a href="#">TELEFONE (11) 2954-2219</a><span>SAC</span></li>
+                            <li><a href="#">WHATSAPP (11) 94050-6266</a><span>DUVIDAS/COMERCIAL</span></li>
+                            <li><a href="#">E-MAIL: VENDAS@MEUAUAU.COM.BR</a></li>
+                            <li><a href="#">Seg. a Sex. - 8:00 as 18:00
+                                Sáb. e Domingo - Direct no Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-footer-down">
+                <div class="redes-sociais">
+                    <h1>SIGA-NOS</h1>
+                    <div class="wrapper-rs">
+                        <div>
+                            <a href="">
+                                <img src="img/assets/redes-sociais/face.png" alt="facebook">
+                            </a>
+                        </div>
+    
+                        <div>
+                            <a href="">
+                                <img src="img/assets/redes-sociais/yt.png" alt="facebook">
+                            </a>
+                        </div>
+    
+                        <div>
+                            <a href="">
+                                <img src="img/assets/redes-sociais/insta.png" alt="facebook">
+                            </a>
+                        </div>
+    
+                        <div>
+                            <a href="">
+                                <img src="img/assets/redes-sociais/Rectangle96.png" alt="facebook">
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="pagamento">
+                    <h1>PAGUE COM</h1>
+                    <div class="wrapper-pgto">
+                        <div>
+                            <a href="">
+                                <img src="img/assets/pagamentos/american express 1.png" alt="facebook">
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="">
+                                <img src="img/assets/pagamentos/aura-logo-E901975B05-seeklogo 1.png" alt="facebook">
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="">
+                                <img src="img/assets/pagamentos/Diners-Club-International-logo.png" alt="facebook">
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="">
+                                <img src="img/assets/pagamentos/Elo_logo 1.png" alt="facebook">
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="">
+                                <img src="img/assets/pagamentos/2000px-Hipercard_logo 1.png" alt="facebook">
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="">
+                                <img src="img/assets/pagamentos/Mastercard-logo.png" alt="facebook">
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="">
+                                <img src="img/assets/pagamentos/purepng.png" alt="facebook">
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="">
+                                <img src="img/assets/pagamentos/Logo—pix_powered_by_Banco_Central_(Brazil,_2020).png" alt="facebook">
+                            </a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+
+                <div class="selos">
+                    <h1>SELOS</h1>
+                    <div class="wrapper-selos">
+                        
+                        <div>
+                            <a href="">
+                                <img src="img/assets/selos/selo-ebit-medalhas 1.png" alt="facebook">
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="">
+                                <img src="img/assets/selos/google-safe-browsing.png" alt="facebook">
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="">
+                                <img src="img/assets/selos/selo ssl.png" alt="facebook">
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- downbar -->
+        <div class="downbar">
+            <div class="wrapper-downbar">
+                <p>DESIGNER: FELIPE SANTOS (@PROTOPUZ3D)</p>
+            </div>
+        </div>
+        
+
+
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+<script>
+    $(document).ready(function(){
+        // slider do card de produtos
+        $('.card-product-slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [{
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows:false
+      }
+    }
+
+  ]
+            });
+
+
+
+        // slider do banner no final da pagina
+        $('.wrapper-bannerTwo-slider').slick({
+            centerMode: true,
+            slidesToShow: 3,
+            lazyLoad: 'ondemand',
+            responsive: [{
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false
+      }
+    }
+
+  ]});
+
+
+    });
+
+
+   
+ </script>
+
+</body>
+</html>
