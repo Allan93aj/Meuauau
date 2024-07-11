@@ -385,10 +385,12 @@ input{
 @media (max-width: 767.98px) {
 .produto .produto-opcoes{
     width: 50%;
-        display: grid;
-        grid-template-columns: 30% 70%;
-        grid-template-rows: 37px 35px 63px 60px auto;
-        row-gap: 5px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 37px 35px 63px 48px auto;
+    row-gap: 5px;
+    
+
     }
 
 /* nome produto */
@@ -564,9 +566,12 @@ input{
 
 .produto .foto-produto .img-view{
     height: inherit;
+    width: 100%;
 }
 
-
+.produto .foto-produto .img-small{
+    width: 100%;
+}
 
 .produto .foto-produto .img-small ul{
     margin: 7px 0 20px;

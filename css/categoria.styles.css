@@ -16,7 +16,7 @@ a{
 .breadcrumbs .breadcrumbs-container{
     padding: 20px;
     font-family: Antonio;
-    font-size: 36px;
+    font-size: 28px;
 }
 
 .breadcrumbs .link-inicio{
@@ -64,7 +64,7 @@ a{
 }
 
 .asside{
-    width: 22%;
+    width: 20%;
     border: none;
     border-radius: 0 100px 10px 10px;
 
@@ -84,7 +84,7 @@ a{
 }
 
 .asside > nav > ul a{
-    font-size: 36px;
+    font-size: 30px;
     font-family: Antonio;
     color: #134dd4;
 }
@@ -92,12 +92,18 @@ a{
 
 
 .produtos-categorias{
-    width: 78%;
+    width: 80%;
 }
 
 /* CARD PRODUCT */
-.card-product .product{
-    margin: 15px;
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+        justify-content: center;
+}
+
+.card-product{
+    width: 30%;
 }
 
 .card-product .product-name h1{
@@ -108,8 +114,9 @@ a{
 }
 
 .card-product-slider{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
+    display: flex;
 }
 
 .card-product img{
@@ -172,8 +179,8 @@ a{
     z-index: 1;
     font-family: 'Antonio';
     border-radius: 20px;
-    height: 60px;
-    font-size: 24px;
+    height: 50px;
+    font-size: 20px;
     align-items: center;
     width: 230px;
     margin-left: 50px;
@@ -222,6 +229,11 @@ a{
 
 
 /* FILTRO TAMANHO */
+.size-button.active {
+    background: #FF2FB3;
+    color: #fff;
+}
+
 .size-buttons {
     display: flex; 
     gap: 10px; 
@@ -234,7 +246,7 @@ a{
 }
 
 .filter-size h3{
-    font-size: 36px;
+    font-size: 28px;
     font-family: Antonio;
     text-align: center;
 }
@@ -264,22 +276,23 @@ a{
 }
 
 .price-filter h3{
-    font-size: 36px;
+    font-size: 28px;
     font-family: Antonio;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .price-filter .filter-button {
-    margin: 1px 25px;
+    margin: 1px 10px;
     height: 45px;
     border-radius: 20px;
     background: none;
     border: none;
     font-family: Play;
-    font-size: 15px;
+    font-size: 14px;
     text-align: -webkit-auto;
     padding: 0 10px;
+    cursor: pointer;
 }
 
 .price-filter .filter-button.active {
@@ -294,7 +307,7 @@ a{
 
 .personalizados-section h1{
     font-family: Antonio;
-    font-size: 36px;
+    font-size: 28px;
     margin-bottom: 15px;
 }
 
@@ -459,16 +472,43 @@ a{
 
 
 .card-product-slider{
-    width: 95%;
+    width: 100%;
 }
 
 .card-product .product {
-    margin: 0 10px;
+    margin: 0 5px;
+    width: 100%;
 }
 
 .card-product img{
     height: 100%;
 }
+
+.card-product{
+    width: 50%;
+}
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.product-img img {
+    max-width: 100%;
+    height: auto;
+}
+.product-info {
+    margin-top: 10px;
+}
+
+.card-product .product-name h1{
+    font-size: 12px;
+}
+
+
+
 
 
 

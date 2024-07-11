@@ -101,10 +101,11 @@
                     </div>
                 </div>
 
+                <!-- FRETE -->
                 <div class="frete-mobile">
                     <div class="container-frete">
-                        <label for="">FRETE</label>
-                        <input type="text" placeholder="CEP">
+                        <label for="cep">FRETE</label>
+                        <input type="text" id="cep" placeholder="CEP" maxlength="10">
                     </div>
                 </div>
 
@@ -355,6 +356,39 @@
                 });
             });
 
+
+            // FUNCAO DE CARACTERE DO CEP 
+        const cepInput = document.getElementById('cep');
+        const cepError = document.getElementById('cep-error');
+
+        // Função para formatar o CEP
+        function formatCep(value) {
+            value = value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+            if (value.length > 5) {
+                value = value.replace(/^(\d{5})(\d)/, '$1-$2'); // Adiciona o hífen após o quinto dígito
+            }
+            if (value.length > 3) {
+                value = value.replace(/^(\d{2})(\d)/, '$1.$2'); // Adiciona o ponto após o segundo dígito
+            }
+            return value;
+        }
+
+        // Adiciona um evento de input ao campo de CEP
+        cepInput.addEventListener('input', () => {
+            const formattedValue = formatCep(cepInput.value);
+            cepInput.value = formattedValue;
+
+            // Verifica se o CEP tem exatamente 9 caracteres (8 dígitos + 1 hífen)
+            const isValidCep = /^\d{2}\.\d{3}-\d{3}$/.test(formattedValue);
+
+            if (isValidCep) {
+                cepError.style.display = 'none';
+                cepInput.style.borderColor = 'initial';
+            } else {
+                cepError.style.display = 'block';
+                cepInput.style.borderColor = 'red';
+            }
+        });
 
 
         // FUNCAO DE ALTERAR A FOTO DO PRODUTO

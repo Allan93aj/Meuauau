@@ -8,6 +8,10 @@ a{
     text-decoration: none;
 }
 
+input{
+    outline: none;
+}
+
 /* TOPBAR */
 .topbar{
     background-color: rgba(213, 21, 246, 1);
@@ -976,14 +980,23 @@ a{
 .newsletter .container-newsletter{
     display: flex;
     padding: 10px 0;
+    gap: 5px;
+}
+
+.news-txt{
+    width: 45%;
 }
 
 .newsletter .news-txt h1{
-    font-size: 12px;
+    font-size: 10px;
+}
+
+.news-email{
+    width: 27%; 
 }
 
 .newsletter .news-email input{
-    width: 120px;
+    width: 100%;
     height: 40px;
     border-radius: 6px;
     font-size: 12px;
@@ -997,40 +1010,94 @@ a{
 
 }
 
+.news-btn{
+    width: 27%;  
+}
+
 
 /* FOOTER */
 .footer{
     margin-bottom: 100px;
 }
 
-.footer .wrapper-footer-up .col.col-1 img{
-    width: 100px;
-}
 .footer .wrapper-footer-up{
     gap: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
+.footer .col-1{
+    width: 100%;
+    align-items: center;
+    flex: 1;
+    order: 1;
+    margin-bottom: 50px;
+}
+
+
+
 .footer .footer-title h1, .footer .wrapper-footer-down h1{
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .footer .col-1 p, .footer ul li{
-    font-size: 10px;
+    font-size: 12px;
 }
 
+.footer .col-1 p{
+    font-size: 18px;
+    text-align: justify;
+
+}
+
+.footer .col-2{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    order: 2;
+}
+
+.footer .col-3{
+    width: 33%;
+    order: 3;
+}
+
+.footer .col-4{
+    width: 34%;
+    order: 4;
+}
+
+
 .footer .wrapper-footer-down{
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 100%;
+    text-align: center;
+    grid-row-gap: 30px;
+}
+
+.footer .redes-sociais {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.footer .pagamento {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+}
+
+.footer .selos {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: center;
 }
 
 .footer .wrapper-footer-down img{
     width: 25px;
 }
 
-.footer .col .saiba-mais{
-    width: 120px;
-    height: 50px;
-    font-size: 19px;
-}
 
 
 
@@ -1045,4 +1112,29 @@ a{
         top: -10px;
         right: -50px;
     }
+
+    .header__nav__container_mobile ol li a img, .header__nav__container_mobile ul li a img{
+        width: 62px;
+    }
+
+    .header__nav nav ol{
+        width: 80px;
+    }
+
+    .header__nav nav ul{
+        gap: 15px;
+    }
+}
+
+
+
+@media (max-width: 375px) {
+.header__nav nav ol{
+    width: 80px;
+}
+    
+.header__nav__container_mobile ol li a img, .header__nav__container_mobile ul li a img{
+    width: 55px;
+}
+
 }
