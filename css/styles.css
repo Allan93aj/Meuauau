@@ -318,8 +318,6 @@ input{
     display: none !important;
 }
 
-
-
 .categories {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -330,33 +328,18 @@ input{
     overflow: hidden;
 }
 
-.category {
-    height: 280px;
+.categories__container{
+    width: 100%;
+    display: flex;
+    padding-bottom: 3px;
+    background: linear-gradient(45deg, #0083AC, #00F500, #F8EB0099, #fbfb0099);
 }
-
 
 .category img {
-    width: 120%; 
+    width: 100%; 
     height: auto;
-    position: relative; 
-    left: -10%; 
-    -o-object-fit: contain; 
-       object-fit: contain; 
-    z-index: 1; 
-    -webkit-transform: matrix(1, 0, 0, 1, 0, 0); 
-        -ms-transform: matrix(1, 0, 0, 1, 0, 0); 
-            transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
-.category.second,
-.category.third,
-.category.fourth,
-.category.fifth {
-    -webkit-transform: skew(-20deg);
-        -ms-transform: skew(-20deg);
-            transform: skew(-20deg);
-    z-index: 3;
-}
 
 /* FUNDO */
 .fundo{
@@ -404,7 +387,17 @@ input{
 
 
 /* CARD PRODUCT */
-.card-product h1{
+.slick-prev:before{
+    background: url(../img/assets/arrowLeft.svg) no-repeat;
+    color: transparent !important;
+}
+
+.slick-next:before{
+    background: url(../img/assets/arrowRight.svg) no-repeat;
+    color: transparent !important;
+}
+
+.card-product .card-product-title h2{
     text-align: center;
     font-size: 36px;
     font-family: Antonio;
@@ -476,11 +469,6 @@ input{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-}
-
-
-.slick-prev:before, .slick-next:before{
-    color: #000 !important;
 }
 
 
@@ -1229,6 +1217,12 @@ input{
         flex-wrap: wrap;
 }
 
+.footer .col .saiba-mais{
+    width: 204px;
+    height: 46px;
+    font-size: 16px;
+}
+
 .footer .col-1{
     width: 100%;
     -webkit-box-align: center;
@@ -1243,6 +1237,12 @@ input{
     margin-bottom: 50px;
 }
 
+.footer .wrapper-rs, .footer .wrapper-pgto, .footer .wrapper-selos{
+    align-items: center;
+}
+
+
+
 
 
 .footer .footer-title h1, .footer .wrapper-footer-down h1{
@@ -1254,7 +1254,7 @@ input{
 }
 
 .footer .col-1 p{
-    font-size: 18px;
+    font-size: 14px;
     text-align: justify;
 
 }
@@ -1325,6 +1325,10 @@ input{
 
 .footer .wrapper-footer-down img{
     width: 25px;
+}
+
+.selos img{
+    width: 60px !important;
 }
 
 

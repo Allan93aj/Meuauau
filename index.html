@@ -159,8 +159,11 @@
         </div>
     </div>
 
+    <div class="container-geral">
+
     <!-- categorias -->
     <div class="categories categorias-desktop">
+        <div class="categories__container">
         <div class="category first">
             <img src="img/gato.jpg" alt="">
         </div>
@@ -196,6 +199,7 @@
         <div class="category sixth">
             <img src="img/gato.jpg" alt="">
         </div>
+    </div>
     </div>
 
     <div class="categories categorias-mobile">
@@ -245,6 +249,9 @@
         <!-- card product -->
 
         <div class="card-product">
+            <div class="card-product-title">
+                <h2>PRODUTOS</h2>
+            </div>
             <div class="card-product-slider">
                 <div class="product first">
                     <div class="product-img">
@@ -329,7 +336,7 @@
                     </div>
                 </div>
             </div>
-
+            
         </div>
 
         <div class="card-product">
@@ -790,6 +797,8 @@
         </div>
     </div>
 
+</div>
+
     <!-- downbar -->
     <div class="downbar">
         <div class="wrapper-downbar">
@@ -854,7 +863,10 @@
             $('.wrapper-bannerTwo-slider').slick({
                 centerMode: true,
                 slidesToShow: 3,
+                autoplay:  true,
+                autoplaySpeed: 2300,
                 lazyLoad: 'ondemand',
+                arrows: false,
                 responsive: [{
                         breakpoint: 767,
                         settings: {
