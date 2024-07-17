@@ -719,3 +719,14 @@ input{
 
 
 }
+
+
+@media (min-width: 1240px){
+    .container-fluid.produto,
+    .descricao,
+    .produtos-relacionados{
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+    
+}
